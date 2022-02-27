@@ -138,33 +138,54 @@
 
           <ul class="works">
             <li class="works__item">
-              <img
-                class="works__img"
-                src="./images/картинка1.jpg"
-                alt="Человек пишет код на компьютере"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop-imgs/works/works1-desktop@x1.jpg 1x,
+                    ./images/desktop-imgs/works/works1-desktop@x2.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desktop-imgs/works/works1-desktop@x1.jpg"
+                  alt="Человек печатает на клавиатуре"
+                />
+              </picture>
               <p class="works__text">ДЕСКТОМНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
             <li class="works__item">
-              <img
-                class="works__img"
-                src="./images/картинка2.jpg"
-                alt="Человек за компьютером смотрит в телефон"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop-imgs/works/works2-desktop@x1.jpg 1x,
+                    ./images/desktop-imgs/works/works2-desktop@x2.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desktop-imgs/works/works2-desktop@x1.jpg"
+                  alt="Человек смотрит на телефон"
+                />
+              </picture>
               <p class="works__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
             <li class="works__item">
-              <img
-                class="works__img"
-                src="./images/картинка3.jpg"
-                alt="Человек рисует на планшете"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop-imgs/works/works3-desktop@x1.jpg 1x,
+                    ./images/desktop-imgs/works/works3-desktop@x2.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desktop-imgs/works/works3-desktop@x1.jpg"
+                  alt="Человек рисует на планшете"
+                />
+              </picture>
               <p class="works__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
             </li>
           </ul>
@@ -505,10 +526,11 @@
 
     <!-- SECTION FOOTER -->
 
-    <!-- <footer class="footer footer-section"">
+    <footer class="footer section"">
       <div class="container">
         <div class="footer__content">
-          <div class="footer__first">
+          <div class="footer__tablet">
+            <div class="footer__first">
             <a href="/index.html" class="logo__footer">Web<span class="logo__white">Studio</span></a>
 
             <address class="address">
@@ -560,6 +582,7 @@
                   </li>
                 </ul>
           </div>
+          </div>
 
           <div class="footer-form">
           <p class="footer-form__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
@@ -575,7 +598,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- МОДАЛЬНОЕ ОКНО -->
 
