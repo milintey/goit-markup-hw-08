@@ -52,6 +52,7 @@
 }
 
 .menu-conteiner {
+  flex-grow: 2;
   position: fixed;
   top: 0;
   left: 0;
@@ -88,12 +89,12 @@
   background-color: transparent;
   border: none;
 
-  padding: 10px 0;
+  padding: 10px;
   margin-left: auto;
   min-width: 40px;
   min-height: 40px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -110,10 +111,6 @@
   .menu-toggle-open:focus & {
     fill: var(--accent-color);
   }
-
-  //   @media screen and (max-width: 768px) {
-  //     display: none;
-  //   }
 }
 
 .menu-social {
