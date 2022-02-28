@@ -20,9 +20,15 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="logo">Web<span class="logo__dark">Studio</span></a>
+
+        <button class="menu-toggle-open js-open-menu"  aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px-1"></use>
+          </svg>
+        </button>
 
         <nav class="nav">
           <ul class="nav__list">
@@ -50,8 +56,52 @@
             </a>
           </li>
         </ul>
+
+        <div class="menu-conteiner js-menu-container" id="mobile-menu">
+          <button class="menu-toggle-close js-close-menu">
+            <svg class="menu-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-close_40px-1"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="./index.html">Студия</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--current" href="./portfolio.html">Портфолио</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="mobile-info">
+          <li class="mobile-info__item">
+            <a class="mobile-info__link mobile-info__link--tel" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="mobile-info__item">
+            <a class="mobile-info__link" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu-social">
+          <li class="menu-social__item">
+            <a class="menu-social__link" href="">Instagram</a>
+          </li">
+          <li class="menu-social__item">
+            <a class="menu-social__link" href="">Twitter</a>
+          </li>
+          <li class="menu-social__item">
+            <a class="menu-social__link" href="">Facebook</a>
+          </li>
+          <li class="menu-social__item">
+            <a class="menu-social__link" href="">Linkedin</a>
+          </li>
+        </ul>
+        </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <section class="section">
@@ -540,5 +590,13 @@
         </div>
       </div>
     </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
