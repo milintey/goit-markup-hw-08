@@ -56,6 +56,10 @@
 
 .nav__list {
   display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header__container {
@@ -85,6 +89,10 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .info__item + .info__item {
@@ -98,4 +106,7 @@
 .info__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.menu {
 }
