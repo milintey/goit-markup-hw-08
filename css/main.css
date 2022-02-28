@@ -829,7 +829,7 @@ body {
   min-height: 40px;
 }
 
-@media screen and (mix-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-toggle-open {
     display: none;
   }
@@ -847,12 +847,6 @@ body {
 .menu-toggle-open:hover .menu-icon,
 .menu-toggle-open:focus .menu-icon {
   fill: var(--accent-color);
-}
-
-@media screen and (mix-width: 768px) {
-  .menu-icon {
-    display: none;
-  }
 }
 
 .menu-social {
