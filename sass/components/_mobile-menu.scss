@@ -93,7 +93,7 @@
   min-width: 40px;
   min-height: 40px;
 
-  @media screen and (mix-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -111,10 +111,10 @@
     fill: var(--accent-color);
   }
 
-  @media screen and (mix-width: 768px) {
-    display: none;
-  }
-}
+//   @media screen and (max-width: 768px) {
+//     display: none;
+//   }
+// }
 
 .menu-social {
   display: flex;
