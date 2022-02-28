@@ -849,6 +849,12 @@ body {
   fill: var(--accent-color);
 }
 
+@media screen and (mix-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
 .menu-social {
   display: flex;
 }

@@ -110,6 +110,10 @@
   .menu-toggle-open:focus & {
     fill: var(--accent-color);
   }
+
+  @media screen and (mix-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-social {
