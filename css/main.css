@@ -116,6 +116,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  padding: 15px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -129,7 +130,7 @@ body {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -609,10 +610,6 @@ body {
   fill: currentColor;
 }
 
-.footer-social {
-  margin-bottom: 60px;
-}
-
 @media screen and (min-width: 1200px) {
   .footer-social {
     margin-left: 70px;
@@ -620,10 +617,16 @@ body {
   }
 }
 
+.footer__tablet {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__tablet {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    align-items: baseline;
   }
 }
 
@@ -631,6 +634,7 @@ body {
   .footer__tablet {
     display: flex;
     align-items: baseline;
+    margin-bottom: 0px;
   }
 }
 
@@ -645,6 +649,12 @@ body {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__first {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__first {
     width: 231px;
@@ -653,9 +663,16 @@ body {
 }
 
 /* ФОРМА В ФУТЕРЕ */
+@media screen and (min-width: 768px) {
+  .footer-form {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-form {
     margin-left: 93px;
+    margin-top: 0px;
   }
 }
 
@@ -866,12 +883,12 @@ body {
   line-height: calc(22 / 18);
   color: var(--accent-color);
   letter-spacing: 0.02em;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding-right: 10px;
 }
 
-.menu-social__item + .menu-social__item {
-  margin-left: 10px;
+.menu-social__item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .hero {
@@ -1302,6 +1319,7 @@ body {
 }
 
 .projects__div {
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -1310,7 +1328,9 @@ body {
 }
 
 .projects__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1325,7 +1345,7 @@ body {
 
 .projects__wrap-text {
   font-size: 18px;
-  line-height: 1.56;
+  line-height: calc(28 / 18);
   color: var(--two-text-color);
   letter-spacing: 0.03em;
   background-color: rgba(33, 150, 243, 0.9);
